@@ -3,7 +3,7 @@ programa {
 
     // Dados variáveis
     inteiro qtd_estagiarios, qtd_pj, qtd_clt
-    real valor
+    inteiro equipe
 
     //entradas - leituras
     escreva ("Quatidade de estagiários: ")
@@ -12,7 +12,11 @@ programa {
     leia (qtd_pj)
     escreva ("Quatidade de clt: ")
     leia (qtd_clt)
-
+    // processar/calcular
+    equipe = qtd_estagiarios + qtd_clt + qtd_pj
+    // apresentar os resultados
+    escreva ("A equipe tem " + equipe + " devs")
+    
   
   }
 }
